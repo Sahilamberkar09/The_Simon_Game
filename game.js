@@ -22,12 +22,12 @@ $(document).keypress(function () {
 
 // ==========================================================
 $(".btn").on("click", function () {
-  let userChosenColour = $(this).attr("id");
-  userClickedPattern.push(userChosenColour);
-  playSound(userChosenColour);
-  animatePress(userChosenColour);
+  let userChosenColour = $(this).attr("id"); //To retrieve The ID of the Div clicked
+  userClickedPattern.push(userChosenColour); //Push the retrieved Id inside the Click Pattern Array
+  playSound(userChosenColour); //Play Sound on click
+  animatePress(userChosenColour); //Animate the button on click
 
-  checkAnswer(userClickedPattern.length - 1);
+  checkAnswer(userClickedPattern.length - 1); //Function to check the answer
 });
 
 // ==========================================================
